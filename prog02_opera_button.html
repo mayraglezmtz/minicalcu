@@ -1,0 +1,48 @@
+<html>
+	<head>
+		<meta charset="utf-8">
+		<link href="efectos.css" rel="stylesheet" type="text/css">
+		<title>Mini Cacluladora</title>
+		<script src="prog02_opera_button.js" type="text/JavaScript"></script>  <!-- Aquí estoy conectando JS al HTML-->
+	</head>
+	<body><center>
+		<br>
+		<h1 class="encabezado">Operaciones básicas</h1>
+		<table border="3%" width="65%">
+			<form name="datos">
+				<tr align="center">
+					<td><p>Indica el primer valor</p></td>
+					<td><input name=valor1 type="number" class="campo"></td> 
+				</tr>
+				<tr align="center">
+					<td><p>Indica el segundo valor</p></td>
+					<td><input name=valor2 type="number" class="campo"></td> 
+				</tr>
+				<tr align="center">
+					<td colspan="2">
+						<table width="100%">
+							<tr align="center">
+								<td><p>El resultado es</p></td>
+								<td><input name=opera type="text" disabled="true" class="campo" style="background:gray"></td> 
+								<td><input name=res type="number" disabled="true" class="campo" style="background:gray"></td> 
+							</tr>
+						</table>
+					</td>
+				</tr>
+				<tr align="center">
+					<td colspan="2">
+						<table width="100%">
+							<tr align="center">
+								<td><input name=b_suma type="button" class="boton_azul" value="Suma" onClick="suma()"></td>
+								<td><input name=b_resta type="button" class="boton_azul" value="Resta" onClick="resta()"></td> 
+								<td><input name=b_multi type="button" class="boton_azul" value="Multiplicacion" onClick="multipli()"></td> 
+								<td><input name=b_divi type="button" class="boton_azul" value="División" onClick="division()"></td> 
+								<td><input name=b_reset type="reset" class="boton_rojo" value="Reset"></td>  
+							</tr>
+						</table>
+					</td>
+				</tr>
+			</form>
+		</table>
+	</center></body>
+</html>
